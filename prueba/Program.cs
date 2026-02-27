@@ -44,6 +44,10 @@ namespace prueba
                         Console.WriteLine("Resultado de la resta: " + resultado);
                         break;
 
+                    case 3:
+                        resultado = num1 * num2;
+                        Console.WriteLine("Resultado de la multiplicación: " + resultado);
+                        break;
 
 
                         Console.Write("\n¿Desea continuar? (S/N): ");
