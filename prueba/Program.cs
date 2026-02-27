@@ -49,8 +49,25 @@ namespace prueba
                         Console.WriteLine("Resultado de la multiplicación: " + resultado);
                         break;
 
+                    case 4:
+                        if (num2 != 0)
+                        {
+                            resultado = num1 / num2;
+                            Console.WriteLine("Resultado de la división: " + resultado);
+                        }
+                        else
+                        {
+                            Console.WriteLine("Error: No se puede dividir entre cero.");
+                        }
+                        break;
 
-                        Console.Write("\n¿Desea continuar? (S/N): ");
+                    default:
+                        Console.WriteLine("Opción no válida.");
+                        break;
+                }
+
+
+                Console.Write("\n¿Desea continuar? (S/N): ");
             continuar = char.ToUpper(Console.ReadKey().KeyChar);
 
         } while (continuar == 'S');
